@@ -1,0 +1,74 @@
+header{
+    /*background-color: rgb(255, 88, 88);*/
+    height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
+body{
+    font-family:'Segoe UI', sans-serif;
+}
+.content{
+    /*background-color: rgb(116, 255, 88);*/
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.padding { 
+    padding:  0em 0.5em .5em 0.5em;
+}
+
+.project{
+    /*background-color: rgb(88, 127, 255);*/
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.title{
+    /*background-color: rgb(252, 255, 88);*/
+    width: 33%;
+}
+
+.year{
+    /*background-color: rgb(255, 183, 88);*/
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    height: min-content;
+}
+
+.contribution{
+    /*background-color: rgb(255, 88, 88);*/
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    height: min-content;
+    border-radius: 0.5em;
+}
+
+.self-color{
+    background-color: rgb(169, 255, 88);
+}
+
+.help-color{
+    background-color: rgb(238, 255, 88);
+}
+
+.type{
+    /*background-color: rgb(227, 88, 255);*/
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    height: min-content;
+    border-radius: 0.5em;
+    border: solid .15em;
+    border-color: rgb(24, 24, 24);
+}
