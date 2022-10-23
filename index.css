@@ -6,8 +6,13 @@ header{
     justify-content: center;
     padding-top: 1%;
 }
-body{
+html{
     font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    margin:0;
+    min-height: 100vh; 
 }
 .content{
     /*background-color: rgb(116, 255, 88);*/
@@ -72,3 +77,14 @@ body{
     border: solid .15rem;
     border-color: rgb(24, 24, 24);
 }
+
+footer{
+    min-height:10%;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
