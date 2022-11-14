@@ -15,47 +15,54 @@ body{
     min-height: 100vh; 
 }
 .content{
-    /*background-color: rgb(116, 255, 88);*/
-    padding-top: 5rem;
+/*    background-color: rgb(116, 255, 88);*/
+    padding: 2rem 0rem;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
-.padding { 
-    padding:  0rem 0.5rem .5rem 0.5rem;
-}
 
 .project{
-    /*background-color: rgb(88, 127, 255);*/
-    padding-top: 1rem;
+/*    background-color: rgb(88, 127, 255);*/
     display: flex;
+    margin: 0.15rem;
+    flex-direction: column;
+    width: 75%;
+    font-size: 12px;
+}
+
+.desc{
+    display:flex;
     flex-direction: row;
-    width: 50%;
-    justify-content: space-between;
-    font-size: 1rem;
+/*    justify-content: space-between;*/
 }
 
 .title{
-    /*background-color: rgb(252, 255, 88);*/
-    width: 33%;
+    background-color: rgb(244,244,244);
+    margin: auto 0rem;
+    width: auto;
+    padding:0.2rem;
+    font-weight: bold;
 }
 
 .year{
-    /*background-color: rgb(255, 183, 88);*/
-    width: 10%;
-    display: flex;
+/*    background-color: rgb(255, 183, 88);*/
+    margin: auto 0rem;
+    margin-right: .5rem;
+    width: 20%;
+    padding:0.2rem;
     justify-content: center;
-    height: min-content;
 }
 
 .contribution{
-    /*background-color: rgb(255, 88, 88);*/
-    width: 10%;
-    display: flex;
+/*    background-color: rgb(255, 88, 88);*/
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    padding:0.2rem;
     justify-content: center;
-    height: min-content;
     border-radius: 0.5rem;
 }
 
@@ -68,13 +75,13 @@ body{
 }
 
 .type{
-    /*background-color: rgb(227, 88, 255);*/
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    height: min-content;
+/*    background-color: rgb(227, 88, 255);*/
+    margin: auto;
+    margin-right: 0rem;
+    width: auto;
+    padding:0.2rem;
     border-radius: 0.5rem;
-    border: solid .15rem;
+    border: solid .1rem;
     border-color: rgb(24, 24, 24);
 }
 
