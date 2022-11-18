@@ -7,18 +7,13 @@
     <link rel="icon" type="image/x-icon" href="/img/PRod_icon.ico">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script src='main.js'></script>
+    <script type="text/javascript" src="data.json"></script>
 </head>
 <body>
     <header class='header'>
         <img src='Img\PRod_H_fitlogo.png'>
     </header>
-    <div class='content'>
-    <script>
-    const json = "data.json";
-    const obj = JSON.parse(json);
-    console.log(obj.projects[0].title)
-    </script>
+    <div class='content' id='projdata'>
         <div class='project'>
             <div class='title'>Мерч - Кофта, Футболка, Блокнот</div>
             <div class='desc'>
