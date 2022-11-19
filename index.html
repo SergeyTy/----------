@@ -7,45 +7,29 @@
     <link rel="icon" type="image/x-icon" href="/img/PRod_icon.ico">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script>
+    $(function() {
+        $.getJSON('data.json', function(data) {
+            $.each(data.projects, function(i, p) {
+                var pr =
+                "<div class='project'><div class='title'>"+ p.title + "</div>"
+                + "<div class='desc'><div class='year'>" + p.desc.year+ "</div>"
+                + "<div class='contribution padding"+(p.desc.contribution == 0 ? " self-color'> Сами "  : " help-color'> Помогли") +"</div>"
+                + "<div class='type padding'>"+ p.desc.type + "</div></div>"
+                + "</div>"
+                $(pr).appendTo("#projdata");
+            });
+        });
+    });
+    </script>
 </head>
 <body>
     <header class='header'>
         <img src='Img\PRod_H_fitlogo.png'>
     </header>
     <div class='content' id='projdata'>
-        <div class='project'>
-            <div class='title'>Мерч - Кофта, Футболка, Блокнот</div>
-            <div class='desc'>
-                <div class='year'>2022</div>
-                <div class='contribution padding self-color'>Сами</div>
-                <div class='type padding'>Разработка мерча</div>
-            </div>
-        </div>
-        <div class='project'>
-            <div class='title '>Разработка визуального стиля для программы Рема</div>
-            <div class='desc'>
-                <div class='year'>2022</div>
-                <div class='contribution help-color'>Помогли</div>
-                <div class='type padding'>Моушен дизайн</div>
-            </div>
-        </div>
-        <div class='project'>
-            <div class='title '>NDA</div>
-            <div class='desc'>
-                <div class='year '>2022</div>
-                <div class='contribution self-color'>Сами</div>
-                <div class='type'>Документальный фильм</div>
-            </div>
-        </div>
-        <div class='project'>
-            <div class='title '>Анимация логотипа "Развитие"</div>
-            <div class='desc'>
-                <div class='year'>2022</div>
-                <div class='contribution self-color'>Сами</div>
-                <div class='type'>Моушен дизайн</div>
-            </div>
-        </div>
+
     </div>
     <footer>
         <div class='footer-text'>
