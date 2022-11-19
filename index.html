@@ -13,7 +13,8 @@
         $.getJSON('data.json', function(data) {
             $.each(data.projects, function(i, p) {
                 var pr =
-                "<div class='project'><div class='title'>"+ p.title + "</div>"
+                "<div class='project tooltip'>"+ "<span class='tooltiptext'>"+ p.desc.about + "</span>"
+                +"<div class='title'>"+ p.title + "</div>"
                 + "<div class='desc'><div class='year'>" + p.desc.year+ "</div>"
                 + "<div class='contribution padding"+(p.desc.contribution == 0 ? " self-color'> Сами "  : " help-color'> Помогли") +"</div>"
                 + "<div class='type padding'>"+ p.desc.type + "</div></div>"
@@ -28,13 +29,13 @@
     <header class='header'>
         <img src='Img\PRod_H_fitlogo.png'>
     </header>
-    <div class='content' id='projdata'>
+        <div class='content' id='projdata'>
 
-    </div>
+        </div>
     <footer>
         <div class='footer-text'>
             <p>
-                ©Praxis prod. 2020-2022
+                ©PRAXIS prod. 2020-2022
             </p>
         </div>
     </footer>

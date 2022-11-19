@@ -95,3 +95,35 @@ footer{
     justify-content: space-around;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50%;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+[data-tooltip]:after {
+    height: 22px;
+    padding: 11px 11px 0 11px;
+    content: attr(data-tooltip);
+    white-space: nowrap;
+}
