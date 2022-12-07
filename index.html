@@ -7,35 +7,42 @@
     <link rel="icon" type="image/x-icon" href="/img/PRod_icon.ico">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-    <script>
-    $(function() {
-        $.getJSON('data.json', function(data) {
-            $.each(data.projects, function(i, p) {
-                var pr =
-                "<div class='project tooltip'>"+ "<span class='tooltiptext'>"+ p.desc.about + "</span>"
-                +"<div class='title'>"+ p.title + "</div>"
-                + "<div class='desc'><div class='year'>" + p.desc.year+ "</div>"
-                + "<div class='contribution padding"+(p.desc.contribution == 0 ? " self-color'> Сами "  : " help-color'> Помогли") +"</div>"
-                + "<div class='type padding'>"+ p.desc.type + "</div></div>"
-                + "</div>"
-                $(pr).appendTo("#projdata");
-            });
-        });
-    });
-    </script>
+    <script src='main.js'></script>
 </head>
 <body>
     <header class='header'>
-        <img src='Img\PRod_H_fitlogo.png'>
+        <img src='img\PRod_H_fitlogo.png'>
     </header>
-        <div class='content' id='projdata'>
-
+    <div class='content'>
+        <div class='project'>
+            <div class='title padding'>Мерч - Кофта, Футболка, Блокнот</div>
+            <div class='year padding'>2022</div>
+            <div class='contribution padding self-color'>Сами</div>
+            <div class='type padding'>Разработка мерча</div>
         </div>
+        <div class='project'>
+            <div class='title padding'>Разработка визуального стиля для программы Рема</div>
+            <div class='year padding'>2022</div>
+            <div class='contribution padding help-color'>Помогли</div>
+            <div class='type padding'>Моушен дизайн</div>
+        </div>
+        <div class='project'>
+            <div class='title padding'>NDA</div>
+            <div class='year padding'>2021-н.в.</div>
+            <div class='contribution padding self-color'>Сами</div>
+            <div class='type padding'>Создание документального фильма</div>
+        </div>
+        <div class='project'>
+            <div class='title padding'>Анимация логотипа "Развитие"</div>
+            <div class='year padding'>2022</div>
+            <div class='contribution padding help-color'>Помогли</div>
+            <div class='type padding'>Моушен дизайн</div>
+        </div>
+    </div>
     <footer>
         <div class='footer-text'>
             <p>
-                ©PRAXIS prod. 2020-2022
+                ©Praxis prod. 2020-2022
             </p>
         </div>
     </footer>
