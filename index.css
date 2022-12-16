@@ -10,6 +10,11 @@ html{
     font-family:'Segoe UI', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color:rgb(24, 24, 24);
+}
+
 body{
     margin:0;
     min-height: 100vh; 
@@ -40,11 +45,16 @@ body{
 }
 
 .title{
-    background-color: rgb(244,244,244);
     margin: auto 0rem;
     width: auto;
     padding:0.2rem;
     font-weight: bold;
+}
+.title-row{
+    background-color: rgb(244,244,244);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
 }
 
 .year{
