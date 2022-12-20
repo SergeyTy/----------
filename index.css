@@ -20,14 +20,30 @@ body{
     min-height: 100vh; 
 }
 .content{
-/*    background-color: rgb(116, 255, 88);*/
-    padding: 2rem 0rem;
+   /* background-color: rgb(116, 255, 88); */
+    padding: 0rem 0rem 2rem 0rem;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding:  0.5em 2em 0.5em 2em;
+}
+
+.item-contact{
+    background-color: #fff;
+    border: solid .1rem;
+    border-color: rgb(24, 24, 24);
+    width: auto;
+    padding:0.2rem;
+    border-radius: 0.5rem;
+}
 
 .project{
 /*    background-color: rgb(88, 127, 255);*/
