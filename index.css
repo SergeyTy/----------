@@ -64,7 +64,7 @@ body{
 }
 
 .item-contact:hover ::after{
-    content: ' Написать';
+    content: ' Написать ';
 }
 
 .project{
