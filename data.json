@@ -7,7 +7,7 @@
                 "year": 2022,
                 "contribution": 0,
                 "type": "Документальный фильм",
-                "about": "Сделали исторический фильм по гранту",
+                "about": "Сделали фильм исторический фильм по гранту",
                 "link": "https://praxisprod.ru"
             }
         },
@@ -17,9 +17,9 @@
             "desc":{
                 "year": 2022,
                 "contribution": 1,
-                "type": "Моушен дизайн",
+                "type": "Моушн дизайн",
                 "about": "Разаработали стили, сделали заставки и плашки",
-                "link": "https://praxisprod.ru"
+                "link": "https://www.behance.net/gallery/156839219/Identity-for-show-rema"
             }
         },
         {
@@ -28,7 +28,7 @@
             "desc":{
                 "year": 2022,
                 "contribution": 0,
-                "type": "Моушен дизайн",
+                "type": "Моушн дизайн",
                 "about": "Анимировали логоип для лагеря в Горном Алтае",
                 "link": "https://praxisprod.ru"
             }
@@ -61,7 +61,7 @@
             "desc":{
                 "year": 2022,
                 "contribution": 1,
-                "type": "Анимационный дизайн",
+                "type": "Моушн дизайн",
                 "about": "На основе готового стиля сделали плашки для показа",
                 "link": "https://praxisprod.ru"
             }
