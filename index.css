@@ -53,6 +53,7 @@ body{
     padding:0.5rem;
     border-radius: 1rem;
     box-shadow: 5px 5px 10px #64b4ff71;
+    transition: all 0.3s ease;
 }
 
 .item-contact:hover{
@@ -65,6 +66,7 @@ body{
 
 .item-contact:hover ::after{
     content: ' Написать';
+    transition: all 0.3s ease;
 }
 
 .project{
