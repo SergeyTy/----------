@@ -41,6 +41,37 @@ body {
     color: black;
 }
 
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.video-modal__content {
+    position: relative;
+    width: 80%;
+    height: 21.34%;
+    max-width: 800px;
+    padding-bottom: 21.34%;
+}
+
+.video-modal__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 .contact {
     display: flex;
     justify-content: right;
@@ -54,6 +85,7 @@ body {
 
 .item-contact {
     /* background-image: linear-gradient(-30deg, #2E9AFF, #F498AD); */
+    background-color: white;
     width: auto;
     padding: 0.5rem;
     border-radius: 1rem;

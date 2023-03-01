@@ -1,105 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta
+<head>
+    <meta charset="utf-8"/>
+    <meta
             http-equiv="X-UA-Compatible"
             content="IE=edge"
-        />
-        <title>PRAXIS prod.</title>
-        <link
+    />
+    <title>PRAXIS prod.</title>
+    <link
             rel="icon"
             type="image/x-icon"
             href="/img/PRod_favicon.ico"
-        />
-        <meta
+    />
+    <meta
             name="viewport"
             content="width=device-width, initial-scale=1"
-        />
-        <link
+    />
+    <link
             rel="stylesheet"
             type="text/css"
             media="screen"
             href="index.css"
-        />
-                <!-- Yandex.Metrika counter -->
-        <script type="text/javascript" >
-            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-        
-            ym(92192030, "init", {
-                clickmap:true,
-                trackLinks:true,
-                accurateTrackBounce:true
-            });
-        </script>
-        <noscript><div><img src="https://mc.yandex.ru/watch/92192030" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-        <!-- /Yandex.Metrika counter -->
-        <script
+    />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(92192030, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/92192030" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script
             type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"
-        ></script>
-        <script>
-            $(function () {
-                $.getJSON("data.json", function (data) {
-                    $.each(data.projects, function (i, p) {
-                        var pr =
-                            "<div class='project tooltip'>" +
-                            "<span class='tooltiptext'>" +
-                            p.desc.about +
-                            "</span>" +
-                            "<div class ='title-row'> <p class='title'>" +
-                            p.title +
-                            "</p>" +
-                            (p.desc.link !==
-                            "none"
-                                ? "<a target='_blank' href=" +
-                                  p.desc.link +
-                                  "><svg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'><path d='M14.851 11.923c-.179-.641-.521-1.246-1.025-1.749-1.562-1.562-4.095-1.563-5.657 0l-4.998 4.998c-1.562 1.563-1.563 4.095 0 5.657 1.562 1.563 4.096 1.561 5.656 0l3.842-3.841.333.009c.404 0 .802-.04 1.189-.117l-4.657 4.656c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-1.952-1.951-1.952-5.12 0-7.071l4.998-4.998c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464.493.493.861 1.063 1.105 1.672l-.787.784zm-5.703.147c.178.643.521 1.25 1.026 1.756 1.562 1.563 4.096 1.561 5.656 0l4.999-4.998c1.563-1.562 1.563-4.095 0-5.657-1.562-1.562-4.095-1.563-5.657 0l-3.841 3.841-.333-.009c-.404 0-.802.04-1.189.117l4.656-4.656c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464 1.951 1.951 1.951 5.119 0 7.071l-4.999 4.998c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-.494-.495-.863-1.067-1.107-1.678l.788-.785z'/></svg></a>"
-                                : "") +
-                            "</div>" +
-                            "<div class='desc'><div class='year'>" +
-                            p.desc.year +
-                            "</div>" +
-                            "<div class='contribution padding" +
-                            (p.desc.contribution == 0
-                                ? " self-color'> Сами "
-                                : " help-color'> Помогли") +
-                            "</div>" +
-                            "<div class='type padding'>" +
-                            p.desc.type +
-                            "</div>" +
-                            "</div>";
-                        $(pr).appendTo("#projdata");
-                    });
+    ></script>
+    <script>
+        $(function () {
+            $.getJSON("data.json", function (data) {
+                $.each(data.projects, function (i, p) {
+                    var pr =
+                        "<div class='project tooltip'>" +
+                        "<span class='tooltiptext'>" +
+                        p.desc.about +
+                        "</span>" +
+                        "<div class ='title-row'> <p class='title'>" +
+                        p.title +
+                        "</p>" +
+                        (p.desc.link !==
+                        "none"
+                            ? "<a target='_blank' href=" +
+                            p.desc.link +
+                            "><svg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'><path d='M14.851 11.923c-.179-.641-.521-1.246-1.025-1.749-1.562-1.562-4.095-1.563-5.657 0l-4.998 4.998c-1.562 1.563-1.563 4.095 0 5.657 1.562 1.563 4.096 1.561 5.656 0l3.842-3.841.333.009c.404 0 .802-.04 1.189-.117l-4.657 4.656c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-1.952-1.951-1.952-5.12 0-7.071l4.998-4.998c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464.493.493.861 1.063 1.105 1.672l-.787.784zm-5.703.147c.178.643.521 1.25 1.026 1.756 1.562 1.563 4.096 1.561 5.656 0l4.999-4.998c1.563-1.562 1.563-4.095 0-5.657-1.562-1.562-4.095-1.563-5.657 0l-3.841 3.841-.333-.009c-.404 0-.802.04-1.189.117l4.656-4.656c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464 1.951 1.951 1.951 5.119 0 7.071l-4.999 4.998c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-.494-.495-.863-1.067-1.107-1.678l.788-.785z'/></svg></a>"
+                            : "") +
+                        "</div>" +
+                        "<div class='desc'><div class='year'>" +
+                        p.desc.year +
+                        "</div>" +
+                        "<div class='contribution padding" +
+                        (p.desc.contribution == 0
+                            ? " self-color'> Сами "
+                            : " help-color'> Помогли") +
+                        "</div>" +
+                        "<div class='type padding'>" +
+                        p.desc.type +
+                        "</div>" +
+                        "</div>";
+                    $(pr).appendTo("#projdata");
                 });
             });
-        </script>
-    </head>
-    <body>
-        <header class="header">
-            <img src="img\PRod_logo.svg" />
-        </header>
-        <div class="content" id="projdata">
-            <div class="links">
-                <a href="https://www.behance.net/PRAXISprod" target="_blank">behance</a>
-                <a href="https://instagram.com/praxisprod/" target="_blank">instagram</a>
-                <a href="https://t.me/praxis_prod">telegram</a>
-                <a href="#">шоурилл</a>
-            </div>
-        </div>
-        <div class="contact">
-            <p class="item-contact">
-                <a href="mailto:hello@praxisprod.ru">💌</a>
-            </p>
-        </div>
-    </body>
-    <footer>
-        <div class="footer-text">
-            <p>©PRAXIS prod. 2023</p>
-        </div>
-    </footer>
+        });
+    </script>
+</head>
+<body>
+<div class="video-modal">
+    <div class="video-modal__content">
+        <iframe class="video-modal__iframe" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<header class="header">
+    <img src="img\PRod_logo.svg"/>
+</header>
+<div class="content" id="projdata">
+    <div class="links">
+        <a href="https://www.behance.net/PRAXISprod" target="_blank">behance</a>
+        <a href="https://instagram.com/praxisprod/" target="_blank">instagram</a>
+        <a href="https://t.me/praxis_prod" target="_blank">telegram</a>
+        <a href="#" class="video-link" data-video="https://www.youtube.com/embed/716qsvCI-Eg">шоурилл</a>
+    </div>
+</div>
+<div class="contact">
+    <p class="item-contact">
+        <a href="mailto:hello@praxisprod.ru">💌</a>
+    </p>
+</div>
+</body>
+<script>
+    const videoLinks = document.querySelectorAll('.video-link');
+    const videoModal = document.querySelector('.video-modal');
+    const videoIframe = videoModal.querySelector('.video-modal__iframe');
+
+    videoLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const videoUrl = link.dataset.video;
+            videoIframe.src = videoUrl;
+            videoModal.style.display = 'flex';
+        });
+    });
+
+    videoModal.addEventListener('click', (event) => {
+        if (event.target === videoModal) {
+            videoModal.style.display = 'none';
+            videoIframe.src = '';
+        }
+    });
+</script>
+<footer>
+    <div class="footer-text">
+        <p>©PRAXIS prod. 2023</p>
+    </div>
+</footer>
 </html>
