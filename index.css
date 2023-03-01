@@ -1,4 +1,4 @@
-header{
+header {
     /*background-color: rgb(255, 88, 88);*/
     height: 3rem;
     width: 100%;
@@ -6,40 +6,45 @@ header{
     justify-content: center;
     padding-top: 1%;
 }
-html{
-    font-family:'Segoe UI', sans-serif;
 
+html {
+    font-family: 'Segoe UI', sans-serif;
 }
 
-a {
-    content: '💌';
-    text-decoration: none;
-    /* color: #fff; */
-    color: rgb(24, 24, 24);
-}
 
-body{
-    margin:0;
+body {
+    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
 }
-.content{
-   /* background-color: rgb(116, 255, 88); */
-    padding: 1rem 0rem 2rem 0rem;
+
+.content {
+    /* background-color: rgb(116, 255, 88); */
+    padding: 0rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     flex-grow: 1;
-
 }
 
-.contact{
+.links{
+    padding: 1rem 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links a{
+    text-decoration: underline;
+    color: black;
+}
+
+.contact {
     display: flex;
     justify-content: right;
-    padding:  0.5em 2em 0.5em 2em;
+    padding: 0.5em 2em 0.5em 2em;
     position: fixed;
     right: 0.1rem;
     top: 90%;
@@ -47,30 +52,37 @@ body{
 }
 
 
-.item-contact{
+.item-contact {
     /* background-image: linear-gradient(-30deg, #2E9AFF, #F498AD); */
     width: auto;
-    padding:0.5rem;
+    padding: 0.5rem;
     border-radius: 1rem;
+    font-size: large;
     box-shadow: 5px 5px 10px #64b4ff71;
     transition: all 0.3s ease;
 }
 
-.item-contact:hover{
-    box-shadow:
-    7px 7px 20px #63b4ff;
+.item-contact a {
+    content: '💌';
+    text-decoration: none;
+    /* color: #fff; */
+    color: rgb(24, 24, 24);
+}
+
+.item-contact:hover {
+    box-shadow: 7px 7px 20px #63b4ff;
     -webkit-transform: translateX(-7px);
     transform: translateX(-7px);
     transition: all 0.3s ease;
 }
 
-.item-contact:hover ::after{
+.item-contact:hover ::after {
     content: ' Написать';
     transition: all 0.3s ease;
 }
 
-.project{
-/*    background-color: rgb(88, 127, 255);*/
+.project {
+    /*    background-color: rgb(88, 127, 255);*/
     display: flex;
     margin: 0.15rem;
     flex-direction: column;
@@ -78,69 +90,70 @@ body{
     font-size: 12px;
 }
 
-.desc{
-    display:flex;
+.desc {
+    display: flex;
     flex-direction: row;
-/*    justify-content: space-between;*/
+    /*    justify-content: space-between;*/
 }
 
-.title{
+.title {
     margin: auto 0rem;
     width: auto;
-    padding:0.2rem;
+    padding: 0.2rem;
     font-weight: bold;
 }
-.title-row{
-    background-color: rgb(244,244,244);
+
+.title-row {
+    background-color: rgb(244, 244, 244);
     justify-content: space-between;
     display: flex;
     flex-direction: row;
 }
 
-.year{
-/*    background-color: rgb(255, 183, 88);*/
+.year {
+    /*    background-color: rgb(255, 183, 88);*/
     margin: auto 0rem;
     margin-right: .5rem;
     width: 20%;
-    padding:0.2rem;
+    padding: 0.2rem;
     justify-content: center;
 }
 
-.contribution{
-/*    background-color: rgb(255, 88, 88);*/
+.contribution {
+    /*    background-color: rgb(255, 88, 88);*/
     margin-top: auto;
     margin-bottom: auto;
     width: auto;
-    padding:0.2rem;
+    padding: 0.2rem;
     justify-content: center;
     border-radius: 0.5rem;
 }
 
-.self-color{
+.self-color {
     background-color: rgb(169, 255, 88);
 }
 
-.help-color{
+.help-color {
     background-color: rgb(238, 255, 88);
 }
 
-.type{
-/*    background-color: rgb(227, 88, 255);*/
+.type {
+    /*    background-color: rgb(227, 88, 255);*/
     margin: auto;
     margin-right: 0rem;
     width: auto;
-    padding:0.2rem;
+    padding: 0.2rem;
     border-radius: 0.5rem;
     border: solid .1rem;
     border-color: rgb(24, 24, 24);
 }
 
-footer{
-    min-height:10%;
+footer {
+    min-height: 10%;
     flex-shrink: 0;
 }
 
-.footer-text{
+.footer-text {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -154,18 +167,18 @@ footer{
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 50%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     text-align: center;
     border-radius: 0.5rem;
     padding: 5px 0;
 
     /* Position the tooltip */
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
