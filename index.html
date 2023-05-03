@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8"/>
     <meta
@@ -96,7 +96,7 @@
     </div>
 </div>
 <header class="header">
-    <img src="img\PRod_logo.svg"/>
+    <img src="img\PRod_logo.svg" alt="логотип Праксис прод"/>
 </header>
 <div class="content" id="projdata">
     <div class="links">
@@ -120,8 +120,7 @@
     videoLinks.forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
-            const videoUrl = link.dataset.video;
-            videoIframe.src = videoUrl;
+            videoIframe.src = link.dataset.video;
             videoModal.style.display = 'flex';
         });
     });
