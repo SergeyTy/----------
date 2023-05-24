@@ -95,7 +95,6 @@ body {
 }
 
 .item-contact a {
-    content: '💌';
     text-decoration: none;
     /* color: #fff; */
     color: rgb(24, 24, 24);
@@ -108,10 +107,6 @@ body {
     transition: all 0.3s ease;
 }
 
-.item-contact:hover ::after {
-    content: ' Написать';
-    transition: all 0.3s ease;
-}
 
 .project {
     /*    background-color: rgb(88, 127, 255);*/
