@@ -55,7 +55,7 @@
     <script>
         $(function () {
             $.getJSON("data.json", function (data) {
-                $.each(data.projects, function (i, p) {
+                $.each($(data.projects).get().reverse(), function (i, p) {
                     var pr =
                         "<div class='project tooltip'>" +
                         "<span class='tooltiptext'>" +
